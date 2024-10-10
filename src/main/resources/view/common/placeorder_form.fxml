@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="357.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.common.PlaceorderFormColtroller">
+   <children>
+      <Label layoutX="9.0" layoutY="8.0" text="Place Order">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="9.0" layoutY="28.0" prefHeight="22.0" prefWidth="307.0" promptText="Search product">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <ComboBox layoutX="9.0" layoutY="58.0" promptText="Select Category" />
+      <Button layoutX="264.0" layoutY="58.0" mnemonicParsing="false" style="-fx-background-color: #5dceff;" text="Cancel" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="9.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="115.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="221.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="9.0" layoutY="219.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="115.0" layoutY="219.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="221.0" layoutY="219.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Line endX="-40.0" endY="348.0" layoutX="368.0" layoutY="9.0" startX="-40.0" startY="-7.000003814697266" />
+      <Label layoutX="338.0" layoutY="11.0" text="Cart">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="338.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+      <Label layoutX="380.0" layoutY="36.0" text="Men's shirt">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="56.0" text="Q :">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="57.0" text="Rs : 3100.00" textFill="RED">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="459.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/delete.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="338.0" layoutY="81.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+      <Label layoutX="380.0" layoutY="82.0" text="Moose Trouser">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="102.0" text="Q :">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="103.0" text="Rs : 1800.00" textFill="RED">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="459.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/delete.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="338.0" layoutY="127.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+      <Label layoutX="380.0" layoutY="128.0" text="Long sleeve shirt">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="148.0" text="Q :">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="149.0" text="Rs : 2900.00" textFill="RED">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="459.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/delete.png" />
+         </image>
+      </ImageView>
+      <Line endX="90.0" endY="-13.333328247070312" layoutX="400.0" layoutY="195.0" startX="-70.33334350585938" startY="-13.333328247070312" />
+      <Line endX="90.0" endY="-13.333328247070312" layoutX="400.0" layoutY="215.0" startX="-70.33334350585938" startY="-13.333328247070312" />
+      <Label layoutX="333.0" layoutY="184.0" text="Net total : ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="186.0" text="Rs : 7600.00" textFill="RED">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <TextField layoutX="332.0" layoutY="208.0" prefHeight="22.0" prefWidth="155.0" promptText="Name">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="332.0" layoutY="235.0" prefHeight="22.0" prefWidth="155.0" promptText="Email">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="332.0" layoutY="262.0" prefHeight="22.0" prefWidth="155.0" promptText="Contact no">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="333.0" layoutY="290.0" prefHeight="22.0" prefWidth="155.0" promptText="Address">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Button layoutX="440.0" layoutY="324.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="47.0" style="-fx-background-color: #5dceff;" text="Place">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <ComboBox layoutX="333.0" layoutY="323.0" prefHeight="22.0" prefWidth="82.0" promptText="Payment Type">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ComboBox>
+      <ImageView fitHeight="87.0" fitWidth="34.0" layoutX="255.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

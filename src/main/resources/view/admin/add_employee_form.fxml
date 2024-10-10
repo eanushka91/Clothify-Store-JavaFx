@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.admin.AddEmployeeFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="301.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.053627758748147764" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0117647061124444" green="0.18431372940540314" blue="0.25882354378700256" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.364705890417099" green="0.8078431487083435" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="106.0" layoutY="12.0" text="Add Employee ">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfieldName" layoutX="22.0" layoutY="68.0" prefHeight="22.0" prefWidth="253.0" promptText="Enter your name">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="48.0" text="Full name" />
+      <TextField fx:id="txtfieldEmailAddress" layoutX="22.0" layoutY="113.0" prefHeight="22.0" prefWidth="253.0" promptText="example@gmail.com">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="93.0" text="Email Address" />
+      <TextField fx:id="txtfieldPassword" layoutX="22.0" layoutY="156.0" prefHeight="22.0" prefWidth="253.0" promptText="Enter more than8 characters for password">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="136.0" text="Password" />
+      <Label layoutX="23.0" layoutY="179.0" text="Company" />
+      <TextField fx:id="txtfieldContactNo" layoutX="22.0" layoutY="244.0" prefHeight="22.0" prefWidth="253.0" promptText="+94 XXX XXX XXX">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="224.0" text="Contact No" />
+      <Button layoutX="23.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="22.0" prefWidth="253.0" style="-fx-background-color: #5dceff;" text="Add">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtfieldCompany" layoutX="23.0" layoutY="200.0" prefHeight="22.0" prefWidth="253.0" promptText="Company name">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtfieldAddress" layoutX="22.0" layoutY="291.0" prefHeight="22.0" prefWidth="253.0" promptText="Address">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="271.0" text="Address" />
+   </children>
+</AnchorPane>

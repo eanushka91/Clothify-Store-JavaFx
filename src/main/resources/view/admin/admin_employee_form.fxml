@@ -2,166 +2,79 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.admin.AdminEmployeeFromController">
+<AnchorPane prefHeight="357.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.admin.AdminEmployeeFromController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="107.0">
-         <fill>
-            <LinearGradient endX="1.0" endY="0.05678235845234869" startX="1.0" startY="0.8801261889821723">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.0117647061124444" green="0.18431372940540314" blue="0.25882354378700256" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.006711409395973154">
-                     <color>
-                        <Color red="0.0117647061124444" green="0.18431372940540314" blue="0.25882354378700256" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.364705890417099" green="0.8078431487083435" blue="1.0" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startX="0.053627758748147764" startY="1.0">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.0117647061124444" green="0.18431372940540314" blue="0.25882354378700256" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.364705890417099" green="0.8078431487083435" blue="1.0" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Rectangle>
-      <ImageView fitHeight="20.0" fitWidth="82.0" layoutX="13.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/clothify%20logo.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="13.0" layoutY="54.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="82.0" text="      Dashboard">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </Button>
-      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/dashboard.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="13.0" layoutY="83.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="82.0" text="      Place Order">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </Button>
-      <Button layoutX="13.0" layoutY="113.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="82.0" text="      Employee">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </Button>
-      <Button layoutX="13.0" layoutY="143.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="82.0" text="      Customer">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </Button>
-      <Button layoutX="13.0" layoutY="174.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="82.0" text="      Product">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </Button>
-      <Button layoutX="13.0" layoutY="205.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="82.0" text="      Inventory">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </Button>
-      <Button layoutX="13.0" layoutY="236.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="82.0" text="      Supplier">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </Button>
-      <Button layoutX="13.0" layoutY="267.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="82.0" text="      Orders">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </Button>
-      <Button layoutX="13.0" layoutY="362.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="82.0" text="      Log out">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </Button>
-      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/place%20order.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/employee.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/customer.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/product.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/inventory.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/supplier.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/order.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../img/log%20out.png" />
-         </image>
-      </ImageView>
       <Line endX="57.0" endY="6.33331298828125" layoutX="41.0" layoutY="337.0" startX="-30.333343505859375" startY="6.33331298828125" stroke="WHITE" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="27.0" layoutX="517.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-      <Label layoutX="523.0" layoutY="8.0" text="Admin">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="118.0" layoutY="50.0" text="Dashboard">
+      <Label layoutX="7.0" layoutY="8.0" text="Employee">
          <font>
             <Font name="Cambria Math" size="14.0" />
          </font>
       </Label>
+      <TextField fx:id="txtfieldSearchBar" layoutX="7.0" layoutY="32.0" prefHeight="22.0" prefWidth="307.0" promptText="Search Employee">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="7.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" width="307.0" />
+      <Line endX="-40.0" endY="348.0" layoutX="366.0" layoutY="9.0" startX="-40.0" startY="-7.000003814697266" />
+      <Label layoutX="336.0" layoutY="11.0" text="Employee Detail">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfieldEmpId" layoutX="330.0" layoutY="54.0" prefHeight="22.0" prefWidth="155.0" promptText="Employee ID">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Button layoutX="332.0" layoutY="267.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="22.0" prefWidth="155.0" style="-fx-background-color: #5dceff;" text="Update">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="331.0" layoutY="34.0" text="Employee ID" />
+      <TextField fx:id="txtfieldEmpName" layoutX="330.0" layoutY="99.0" prefHeight="22.0" prefWidth="155.0" promptText="Name">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="331.0" layoutY="79.0" text="Name" />
+      <TextField fx:id="txtfieldContactNo" layoutX="330.0" layoutY="142.0" prefHeight="22.0" prefWidth="155.0" promptText="Contact No">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="331.0" layoutY="122.0" text="Contact No" />
+      <TextField fx:id="txtfieldCompany" layoutX="330.0" layoutY="185.0" prefHeight="22.0" prefWidth="155.0" promptText="Company">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="331.0" layoutY="165.0" text="Company" />
+      <TextField fx:id="txtfieldAddress" layoutX="330.0" layoutY="230.0" prefHeight="22.0" prefWidth="155.0" promptText="Address">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="331.0" layoutY="210.0" text="Address" />
+      <Button layoutX="332.0" layoutY="296.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="22.0" prefWidth="155.0" style="-fx-background-color: #5dceff;" text="Delete">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="332.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="22.0" prefWidth="155.0" style="-fx-background-color: #5dceff;" text="Add">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="7.0" layoutY="192.0" stroke="BLACK" strokeType="INSIDE" width="307.0" />
+      <AnchorPane fx:id="cardEmp1" layoutX="6.0" layoutY="64.0" prefHeight="114.0" prefWidth="307.0" />
+      <AnchorPane fx:id="cardEmp2" layoutX="7.0" layoutY="192.0" prefHeight="114.0" prefWidth="307.0" />
    </children>
 </AnchorPane>

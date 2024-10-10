@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="357.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.common.InventoryFormController">
+   <children>
+      <Label layoutX="8.0" layoutY="8.0" text="Inventory">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfieldSearchProduct" layoutX="8.0" layoutY="28.0" prefHeight="22.0" prefWidth="307.0" promptText="Search product">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <ComboBox layoutX="8.0" layoutY="58.0" promptText="Select Category" />
+      <Button layoutX="263.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnCancelOnAction" style="-fx-background-color: #5dceff;" text="Cancel" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="8.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="114.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="220.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="8.0" layoutY="219.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="114.0" layoutY="219.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="220.0" layoutY="219.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Line endX="-40.0" endY="348.0" layoutX="367.0" layoutY="9.0" startX="-40.0" startY="-7.000003814697266" />
+      <Label layoutX="338.0" layoutY="9.0" text="Inventory">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfieldProductId" layoutX="332.0" layoutY="52.0" prefHeight="22.0" prefWidth="155.0" promptText="Product ID">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="333.0" layoutY="32.0" text="Product ID" />
+      <TextField fx:id="txtfieldProductName" layoutX="332.0" layoutY="97.0" prefHeight="22.0" prefWidth="155.0" promptText="Name">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="333.0" layoutY="77.0" text="Product Name" />
+      <TextField fx:id="txtfieldSize" layoutX="332.0" layoutY="140.0" prefHeight="22.0" prefWidth="155.0" promptText="Size">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="333.0" layoutY="120.0" text="Size" />
+      <TextField fx:id="txtfieldQuantity" layoutX="332.0" layoutY="183.0" prefHeight="22.0" prefWidth="155.0" promptText="Quantity">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="333.0" layoutY="163.0" text="Quantity" />
+   </children>
+</AnchorPane>

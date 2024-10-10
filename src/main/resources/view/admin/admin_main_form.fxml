@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="boaderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.admin.AdminMainFormController">
+   <top>
+      <AnchorPane prefHeight="44.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.053627758748147764" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0117647061124444" green="0.18431372940540314" blue="0.25882354378700256" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.364705890417099" green="0.8078431487083435" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="27.0" layoutX="508.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
+            <Label layoutX="514.0" layoutY="7.0" text="Admin">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="82.0" layoutX="7.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/clothify%20logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="357.0" prefWidth="102.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="358.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="110.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.05678235845234869" startX="1.0" startY="0.8801261889821723">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0117647061124444" green="0.18431372940540314" blue="0.25882354378700256" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.0117647061124444" green="0.18431372940540314" blue="0.25882354378700256" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.364705890417099" green="0.8078431487083435" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Button fx:id="btnDashboard" layoutX="13.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnDashboardOnAction" prefHeight="4.0" prefWidth="82.0" text="      Dashboard">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/dashboard.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="13.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" prefHeight="4.0" prefWidth="82.0" text="      Place Order">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="13.0" layoutY="81.0" mnemonicParsing="false" onAction="#btnEmployeeOnAction" prefHeight="4.0" prefWidth="82.0" text="      Employee">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="13.0" layoutY="111.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="4.0" prefWidth="82.0" text="      Customer">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="13.0" layoutY="142.0" mnemonicParsing="false" onAction="#btnProductOnAction" prefHeight="4.0" prefWidth="82.0" text="      Product">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="13.0" layoutY="173.0" mnemonicParsing="false" onAction="#btnInventoryOnAction" prefHeight="4.0" prefWidth="82.0" text="      Inventory">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="13.0" layoutY="204.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="4.0" prefWidth="82.0" text="      Supplier">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="13.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnOrdersOnAction" prefHeight="4.0" prefWidth="82.0" text="      Orders">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/place%20order.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/employee.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/customer.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/product.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/inventory.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/supplier.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="20.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/order.png" />
+               </image>
+            </ImageView>
+            <Line endX="57.0" endY="6.33331298828125" layoutX="41.0" layoutY="280.0" startX="-30.333343505859375" startY="6.33331298828125" stroke="WHITE" />
+            <Button layoutX="14.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="4.0" prefWidth="82.0" text="      Log out">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="21.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/log%20out.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
