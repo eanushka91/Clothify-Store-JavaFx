@@ -12,10 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
@@ -93,7 +90,13 @@ public class InventoryFormController implements Initializable {
 
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
-
+        if (inventoryService.delete(txtfieldProductId.getText())) {
+            new Alert(Alert.AlertType.INFORMATION, "Supplier remove successful !").show();
+        } else {
+            new Alert(Alert.AlertType.ERROR).show();
+        }
+        loadTable();
+        clearInputFields();
     }
 
     @FXML
