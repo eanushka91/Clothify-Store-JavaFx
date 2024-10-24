@@ -6,6 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -53,6 +55,7 @@ public class EmployeeMainFormController implements Initializable {
 
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/login_form.fxml"))));
+            stage.setResizable(false);
             stage.show();
             btnDashboard.getScene().getWindow().hide();
         } catch (IOException e) {
@@ -78,5 +81,18 @@ public class EmployeeMainFormController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         loadForm("/view/common/dashboard_form.fxml");
+    }
+
+    public static class CustomerCardForm {
+
+        @FXML
+        private ImageView Custimg;
+
+        @FXML
+        private Label lblCustContact;
+
+        @FXML
+        private Label lblCustName;
+
     }
 }

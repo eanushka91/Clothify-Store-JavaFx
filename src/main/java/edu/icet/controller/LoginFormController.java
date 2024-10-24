@@ -1,7 +1,7 @@
 package edu.icet.controller;
 
 import edu.icet.db.DBConnection;
-import edu.icet.entity.User;
+import edu.icet.model.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -18,8 +19,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class LoginFormController {
-
+public class LoginFormController  {
     @FXML
     private Text txtForgotPassword;
 
@@ -30,15 +30,33 @@ public class LoginFormController {
     private PasswordField txtfieldPassword;
 
     @FXML
+    void initialize() {
+        txtfieldEmail.setOnAction(event -> txtfieldPassword.requestFocus());
+
+        txtfieldPassword.setOnAction(event -> btnLoginOnAction(null));
+    }
+
+    @FXML
+    void lblForgotOnAction(MouseEvent event) {
+        Stage stage = new Stage();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/forgot_password_form.fxml"))));
+            stage.setTitle("Forgot Password");
+            stage.setResizable(false);
+            stage.show();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    @FXML
     void btnLoginOnAction(ActionEvent event) {
-        //Login
-        String SQl = "SELECT * FROM user WHERE email=?";
+        String SQl = "SELECT * FROM user WHERE email= ?";
 
         try {
             Connection connection = DBConnection.getInstance().getConnection();
             PreparedStatement psTm = connection.prepareStatement(SQl);
             psTm.setString(1, txtfieldEmail.getText());
-
             ResultSet rs = psTm.executeQuery();
 
             User user = null;
@@ -47,40 +65,42 @@ public class LoginFormController {
                         rs.getInt(1),
                         rs.getString(2),
                         rs.getString(3),
-                        rs.getString(4));
+                        rs.getString(4)
+                );
             }
 
-            if(user != null && txtfieldEmail.getText().equals(user.getEmail()) && txtfieldPassword.getText().equals(user.getPassword()) && user.getRole().equals("admin")){
+            if(user != null && txtfieldEmail.getText().equals(user.getEmail())
+                    && txtfieldPassword.getText().equals(user.getPassword())
+                    && user.getRole().equals("admin")){
                 Stage stage = new Stage();
                 try {
                     stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/admin/admin_main_form.fxml"))));
                     stage.setTitle("Dashboard");
+                    stage.setResizable(false);
                     stage.show();
                     txtfieldEmail.getScene().getWindow().hide();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
 
-            }else if(user != null && txtfieldEmail.getText().equals(user.getEmail()) && txtfieldPassword.getText().equals(user.getPassword()) && user.getRole().equals("employee")){
+            } else if(user != null && txtfieldEmail.getText().equals(user.getEmail())
+                    && txtfieldPassword.getText().equals(user.getPassword())
+                    && user.getRole().equals("employee")){
                 Stage stage = new Stage();
                 try {
                     stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/employee/employee_main_form.fxml"))));
                     stage.setTitle("Dashboard");
+                    stage.setResizable(false);
                     stage.show();
                     txtfieldEmail.getScene().getWindow().hide();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-            }else{
+            } else {
                 new Alert(Alert.AlertType.ERROR,"Login Error").showAndWait();
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
-
-
-
     }
-
 }

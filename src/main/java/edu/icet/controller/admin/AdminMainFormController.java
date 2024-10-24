@@ -56,6 +56,7 @@ public class AdminMainFormController implements Initializable {
 
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/login_form.fxml"))));
+            stage.setResizable(false);
             stage.show();
             btnDashboard.getScene().getWindow().hide();
         } catch (IOException e) {

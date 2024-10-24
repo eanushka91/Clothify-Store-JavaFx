@@ -35,34 +35,40 @@
             <Font name="Cambria Math" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="txtfieldName" layoutX="23.0" layoutY="158.0" prefHeight="22.0" prefWidth="253.0" promptText="Enter your name">
+      <TextField fx:id="txtfieldName" layoutX="23.0" layoutY="146.0" prefHeight="22.0" prefWidth="253.0" promptText="Enter your name">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <Label layoutX="24.0" layoutY="138.0" text="Name" />
-      <TextField fx:id="txtfieldEmailAddress" layoutX="23.0" layoutY="285.0" prefHeight="22.0" prefWidth="253.0" promptText="example@gmail.com">
+      <Label layoutX="24.0" layoutY="126.0" text="Name" />
+      <TextField fx:id="txtfieldEmailAddress" layoutX="23.0" layoutY="253.0" prefHeight="22.0" prefWidth="253.0" promptText="example@gmail.com">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <Label layoutX="24.0" layoutY="265.0" text="Email Address" />
-      <TextField fx:id="txtfieldSupplierId" layoutX="23.0" layoutY="93.0" prefHeight="22.0" prefWidth="253.0" promptText="Supplier Id">
+      <Label layoutX="24.0" layoutY="233.0" text="Email Address" />
+      <TextField fx:id="txtfieldSupplierId" layoutX="23.0" layoutY="88.0" prefHeight="22.0" prefWidth="253.0" promptText="Supplier Id">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <Label layoutX="24.0" layoutY="73.0" text="Supplier ID" />
-      <Label layoutX="23.0" layoutY="202.0" text="Company" />
+      <Label layoutX="24.0" layoutY="68.0" text="Supplier ID" />
+      <Label layoutX="23.0" layoutY="179.0" text="Company" />
       <Button layoutX="22.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="22.0" prefWidth="253.0" style="-fx-background-color: #5dceff;" text="Add">
          <font>
             <Font size="10.0" />
          </font>
       </Button>
-      <TextField fx:id="txtfieldCompany" layoutX="23.0" layoutY="223.0" prefHeight="22.0" prefWidth="253.0" promptText="Company name">
+      <TextField fx:id="txtfieldCompany" layoutX="23.0" layoutY="200.0" prefHeight="22.0" prefWidth="253.0" promptText="Company name">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
+      <TextField fx:id="txtFieldItem" layoutX="23.0" layoutY="304.0" prefHeight="22.0" prefWidth="253.0" promptText="Product Name">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="24.0" layoutY="284.0" text="Product" />
    </children>
 </AnchorPane>

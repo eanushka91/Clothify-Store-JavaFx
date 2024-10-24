@@ -1,13 +1,16 @@
-package edu.icet.entity;
+package edu.icet.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+@ToString
+public class  User {
     private int id;
     private String email;
     private String password;

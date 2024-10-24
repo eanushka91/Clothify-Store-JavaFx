@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.LoginFormController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="edu.icet.controller.LoginFormController">
    <children>
       <Line endX="126.0" endY="318.2928771972656" layoutX="174.0" layoutY="83.0" startX="126.0" startY="-82.99999237060547" />
       <Rectangle arcHeight="20.0" arcWidth="20.0" height="362.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="258.0">
@@ -82,7 +82,7 @@
             <Font size="10.0" />
          </font>
       </Text>
-      <Text fx:id="txtForgotPassword" fill="#5dceff" layoutX="491.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password" underline="true">
+      <Text fx:id="txtForgotPassword" fill="#5dceff" layoutX="491.0" layoutY="258.0" onMouseClicked="#lblForgotOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password" underline="true">
          <font>
             <Font size="11.0" />
          </font>

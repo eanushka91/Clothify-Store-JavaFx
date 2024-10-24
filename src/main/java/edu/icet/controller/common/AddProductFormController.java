@@ -1,5 +1,7 @@
 package edu.icet.controller.common;
 
+import edu.icet.service.Servicefactory;
+import edu.icet.service.custom.ProductService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
@@ -18,6 +20,7 @@ public class AddProductFormController {
 
     @FXML
     private TextField txtfieldSupplierId;
+
 
     @FXML
     void btnAddOnAction(ActionEvent event) {

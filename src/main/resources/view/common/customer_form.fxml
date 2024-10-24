@@ -2,67 +2,77 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="357.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.common.CustomerFormController">
+<AnchorPane prefHeight="357.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="edu.icet.controller.common.CustomerFormController">
    <children>
       <Label layoutX="9.0" layoutY="8.0" text="Customer">
          <font>
             <Font name="Cambria Math" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="txtfieldSearchCustomer" layoutX="9.0" layoutY="32.0" prefHeight="22.0" prefWidth="307.0" promptText="Search customer">
+      <TextField fx:id="txtfieldSearchCustomer" layoutX="9.0" layoutY="32.0" onAction="#txtfieldSearchCustomerOnAction" prefHeight="22.0" prefWidth="405.0" promptText="Search customer">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="9.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" width="307.0" />
-      <Line endX="-40.0" endY="348.0" layoutX="368.0" layoutY="9.0" startX="-40.0" startY="-7.000003814697266" />
-      <Label layoutX="338.0" layoutY="11.0" text="Customer Details">
+      <Line endX="-40.0" endY="348.0" layoutX="465.0" layoutY="9.0" startX="-40.0" startY="-7.000003814697266" />
+      <Label layoutX="441.0" layoutY="11.0" text="Customer Details">
          <font>
             <Font name="Cambria Math" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="txtfieldCustomerId" layoutX="332.0" layoutY="67.0" prefHeight="22.0" prefWidth="155.0" promptText="Customer ID">
+      <TextField fx:id="txtfieldCustomerId" layoutX="435.0" layoutY="67.0" prefHeight="22.0" prefWidth="155.0" promptText="Customer ID">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <Button layoutX="334.0" layoutY="261.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="22.0" prefWidth="155.0" style="-fx-background-color: #5dceff;" text="Update">
+      <Label layoutX="436.0" layoutY="47.0" text="Customer ID" />
+      <TextField fx:id="txtfieldName" layoutX="435.0" layoutY="117.0" prefHeight="22.0" prefWidth="155.0" promptText="Name">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="436.0" layoutY="97.0" text="Name" />
+      <TextField fx:id="txtFieldContactNo" layoutX="435.0" layoutY="167.0" prefHeight="22.0" prefWidth="155.0" promptText="Contact No">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="436.0" layoutY="147.0" text="Contact No" />
+      <TextField fx:id="txtfieldAddress" layoutX="435.0" layoutY="214.0" prefHeight="22.0" prefWidth="155.0" promptText="Address">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="436.0" layoutY="194.0" text="Address" />
+      <Button layoutX="436.0" layoutY="255.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="22.0" prefWidth="155.0" style="-fx-background-color: #5dceff;" text="Update">
          <font>
             <Font size="10.0" />
          </font>
       </Button>
-      <Label layoutX="333.0" layoutY="47.0" text="Customer ID" />
-      <TextField fx:id="txtfieldName" layoutX="332.0" layoutY="117.0" prefHeight="22.0" prefWidth="155.0" promptText="Name">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </TextField>
-      <Label layoutX="333.0" layoutY="97.0" text="Name" />
-      <TextField fx:id="txtFieldContactNo" layoutX="332.0" layoutY="167.0" prefHeight="22.0" prefWidth="155.0" promptText="Contact No">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </TextField>
-      <Label layoutX="333.0" layoutY="147.0" text="Contact No" />
-      <TextField fx:id="txtfieldAddress" layoutX="332.0" layoutY="214.0" prefHeight="22.0" prefWidth="155.0" promptText="Address">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </TextField>
-      <Label layoutX="333.0" layoutY="194.0" text="Address" />
-      <Button layoutX="334.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="22.0" prefWidth="155.0" style="-fx-background-color: #5dceff;" text="Delete">
+      <Button layoutX="436.0" layoutY="284.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="22.0" prefWidth="155.0" style="-fx-background-color: #5dceff;" text="Delete">
          <font>
             <Font size="10.0" />
          </font>
       </Button>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="9.0" layoutY="192.0" stroke="BLACK" strokeType="INSIDE" width="307.0" />
-      <AnchorPane fx:id="cardCustomer1" layoutX="9.0" layoutY="63.0" prefHeight="114.0" prefWidth="307.0" />
-      <AnchorPane fx:id="cardCustomer2" layoutX="9.0" layoutY="192.0" prefHeight="114.0" prefWidth="307.0" />
+      <Button layoutX="436.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="22.0" prefWidth="155.0" style="-fx-background-color: #5dceff;" text="Add">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblView" layoutX="9.0" layoutY="78.0" prefHeight="268.0" prefWidth="405.0">
+        <columns>
+          <TableColumn fx:id="txtCustomerId" prefWidth="74.6666898727417" text="Customer ID" />
+          <TableColumn fx:id="txtName" prefWidth="98.00003051757812" text="Name" />
+            <TableColumn fx:id="txtContactNo" prefWidth="93.3333740234375" text="ContactNo" />
+            <TableColumn fx:id="txtAddress" prefWidth="138.6666259765625" text="Address" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
