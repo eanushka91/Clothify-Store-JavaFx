@@ -1,10 +1,8 @@
 package edu.icet.controller.common;
 
 import edu.icet.model.Inventory;
-import edu.icet.model.Supplier;
 import edu.icet.service.Servicefactory;
 import edu.icet.service.custom.InventoryService;
-import edu.icet.service.custom.SupplierService;
 import edu.icet.util.ServiceType;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -101,7 +99,59 @@ public class InventoryFormController implements Initializable {
 
     @FXML
     void btnUpdateOnAction(ActionEvent event) {
+        Inventory inventory = new Inventory(
+                txtfieldProductId.getText(),
+                txtfieldProductName.getText(),
+                (String) cmbProductCategory.getValue(),
+                txtfieldSize.getText(),
+                txtfieldPrice.getText(),
+                txtfieldQuantity.getText()
+        );
 
+        if (isValidSupplierInputDetails(inventory)) {
+            if (inventoryService.update(inventory)) {
+                new Alert(Alert.AlertType.CONFIRMATION, "Supplier updated successful !").show();
+            } else {
+                new Alert(Alert.AlertType.ERROR, "Supplier not updated :(").show();
+            }
+        } else {
+            new Alert(Alert.AlertType.ERROR, "Please fill out all fields correctly !").show();
+        }
+        loadTable();
+        clearInputFields();
+    }
+
+    private boolean isValidSupplierInputDetails(Inventory inventory) {
+        if (inventory.getId().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR, "Supplier ID required !").show();
+            return false;
+        }
+
+        if (inventory.getName().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR, "Name is required.").show();
+            return false;
+        }
+
+        if (inventory.getCategory().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR, "Category is required.").show();
+            return false;
+        }
+
+        if (inventory.getSize().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR, "Size is required.").show();
+            return false;
+        }
+
+        if (inventory.getPrice().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR, "Price is required.").show();
+            return false;
+        }
+
+        if (inventory.getQuantity().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR, "Quantity is required.").show();
+            return false;
+        }
+        return true;
     }
 
     @FXML
